@@ -20,7 +20,7 @@
         <?php if (isset($_GET['error'])):?>
         <p style="margin: 1px; color: red; text-align: center;"> Uno de los campos se encuentra vacío </p>
         <?php endif?>
-        <h1 id="signup" style="background-color: rgb(112, 120, 119); background-position: initial initial; background-repeat: initial initial;">Iniciar Sesión</h1>
+        <h1 id="signup" style="background-color: rgb(112, 120, 119); background-position: initial initial; background-repeat: initial initial;">♣ Registro ♣</h1>
         <form action="signup.php" method="POST" id="form-login">
             <input id="name" name="name" placeholder="Usuario" style="opacity: 1; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial;">
             <input id="pass" name="password" type="password" placeholder="Password" style="opacity: 1; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial;">

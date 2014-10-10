@@ -19,7 +19,7 @@
 <div id="logmsk" style="display: block;">
     
     <div id="userbox">
-        <h1 accesskey="index.php" id="signup" style="background-color: rgb(118, 171, 219); background-position: initial initial; background-repeat: initial initial;">Lista de Tareas: <?php echo $_SESSION['name'];?> </h1>
+        <h1 accesskey="index.php" id="signup" style="background-color: rgb(118, 171, 219); background-position: initial initial; background-repeat: initial initial;">Lista de Tareas ♦ <?php echo '<strong>'.$_SESSION['name'].'</strong>';?> ♦</h1>
         <form action="addTask.php" method="POST" id="form-login">
             <div class="form-group">
               <input id="task" class="inline-input" name="task" placeholder="Nueva Tarea" style="opacity: 1; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial;">
