@@ -48,11 +48,6 @@
     font-size: 14px;
 }
 
-//.signup{
-//    position: absolute;
-//    right: 125px;
-//    bottom: 12px;
-//}
 
 input  {
     -moz-appearance: none;
@@ -81,7 +76,7 @@ input  {
 }
 input.inline-input {
     width: 250px;
-    margin: auto;
+    margin: 5px;
     display: inline-block;
 }
 #pass {
@@ -196,7 +191,8 @@ button, #signupb {
     cursor: pointer;
 }
 button.inline-button {
-    position: relative;
+    position: initial;
+    right: 34px;
     float: right;
 }
 #userbox {
