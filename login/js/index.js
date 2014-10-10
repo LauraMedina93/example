@@ -44,6 +44,27 @@ $(function() {
             $this1.css('background-color', '#FFFAAA');
         }
     });
+    //event para duplicated-pass
+    var d_pass = $("#duplicated_pass");
+    d_pass.keyup(function() {
+        var $this1 = $(this);
+        var d_passLength = $this1.val().length;
+
+        if (d_passLength >= 13) {
+            $this1.css('background-color', '#FFFA6A');
+        } else {
+            $this1.css('background-color', '#FFFFFF');
+        }
+    });
+    
+    d_pass.blur(function(){
+        var $this1 = $(this);
+        var d_passLength = $this1.val().length;
+        if (d_passLength == 0) {
+            $this1.css('background-color', '#FFFAAA');
+        }
+    });
+    
     $('form').submit(function(){
         if (cond){
            return false;

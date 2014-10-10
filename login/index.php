@@ -20,13 +20,13 @@
         <?php if (isset($_GET['error'])):?>
         <p style="margin: 10px; color: red; text-align: center;"> Usuario o Password incorrecta  </p>
         <?php endif?>
-        <h1 id="signup" style="background-color: rgb(118, 171, 219); background-position: initial initial; background-repeat: initial initial;">Iniciar Sesión</h1>
+        <h1 id="signup" style="background-color: rgb(112, 120, 119); background-position: initial initial; background-repeat: initial initial;">Iniciar Sesión</h1>
         <form action="login.php" method="POST" id="form-login">
             <input id="name" name="name" placeholder="Usuario" style="opacity: 1; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial;">
             <input id="pass" name="password" type="password" placeholder="Password" style="opacity: 1; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial;">
             <input type="submit" id="signupb" style="cursor: default; text-align: center" value="Ingresar"/>
         </form>
-        <a href="register.php" class="signup">Sign Up</a>
+        <a id="login_botton" href="register.php" class="signup">Sign Up</a>
     </div>
     <script src="js/index.js"></script>
 </div>
