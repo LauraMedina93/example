@@ -13,7 +13,6 @@
 </head>
 
 <body>
-    
 <?php if (!isset($_SESSION['name']) || !isset($_SESSION['pass'])):?>
 <div id="logmsk" style="display: block;">
     <div id="userbox">
@@ -33,7 +32,7 @@
 <?php else: ?>
 <?php Header('Location: todo.php');?>
 <?php endif; ?>
-    
+<?php if(isset($_SESSION['cantIntento'])){ var_dump($_SESSION['cantIntento']);}?>
 </body>
 
 </html>
