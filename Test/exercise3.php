@@ -12,6 +12,11 @@ function guess($date)
 //usage
  echo guess('10/09/2014 20:30');
 
- 
+ //Lo que se hace esta funcion en pasar por parametros una fecha,
+ //luego crea una variable donde crea la fecha del mismo instante ($today).
+ //Despues se crea ($date1), donde la fecha qe se crea es la que se pasa por parametro.
+ //Despues se calcula el tiempo de $today en segundos y lo mismo para $date1.
+ //Despues se calcula el intervalo del tiempo mediante la resta y division por segundos, 
+ //por lo que retorna la fecha en minutos.
  
 ?>
