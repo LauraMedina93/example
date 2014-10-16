@@ -1,8 +1,4 @@
 <?php
-
-define ('APPDIR', 'opp' );
-define('BASEDIR',realpath(dirname(__FILE__) . '/../' . APPDIR) . '/');
-
 function __autoload($className)
 {
     $className = ltrim($className, '\\');
@@ -14,7 +10,7 @@ function __autoload($className)
         $fileName = str_replace('\\', DIRECTORY_SEPARATOR, $namespace) . DIRECTORY_SEPARATOR;
     }
     $fileName .= str_replace('_', DIRECTORY_SEPARATOR, $className) . '.php';
-    require_once BASEDIR .  $fileName;
+    require_once __DIR__. DIRECTORY_SEPARATOR .  $fileName;
 }
 
 ?>
