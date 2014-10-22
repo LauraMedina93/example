@@ -12,7 +12,11 @@ class Province
         $this->name = $name;
         $this->cities = array();
     }
-        
+    public function setName(City $city)
+    {
+        $this->cities[] = $city;
+    }
+    
     public function getName()
     {
         return $this->name;
@@ -21,11 +25,6 @@ class Province
     public function getCities()
     {
         return $this->cities;
-    }
-    
-    public function addCity(City $city)
-    {
-        $this->cities[] = $city;
     }
 }
 ?>

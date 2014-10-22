@@ -5,24 +5,23 @@ namespace citiesyprovinces;
 class City {
 
     public $name;
-    public $pc;
+    public $cp;
 
-    public function __construct($name, $pc) {
+    public function __construct($name, $cp) {
         $this->name = $name;
-        $this->pc = $pc;
+        $this->cp = $cp;
     }
 
     public function setName($name) {
         $this->name = $name;
     }
-
+    
+    public function getCp() {
+        return $this->cp;
+    }
+    
     public function getName() {
         return $this->name;
     }
-
-    public function getPc() {
-        return $this->pc;
-    }
-
 }
 ?>

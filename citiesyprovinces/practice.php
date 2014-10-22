@@ -1,5 +1,8 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <title> Ejercicio Ajax </title>
         <style>
             .container{
                 position: absolute; /* or absolute */
@@ -10,30 +13,34 @@
                 display: none
             }
         </style>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
     </head>
     <body class="container">
-        <select class="Province">
-           <?php foreach ($Provinces as $prov) :?>
-           <option><?php echo $prov->getName()?></option>
+        <select class="Provinces">
+           
+            <option value="">Seleccione una Provincia</option>
+            <option>Chaco</option>
+            <option>Corrientes</option>
+        </select>
+        
+        <select class="City">
+            <?php foreach ($Provinces as $prov) :?>
+           <option><?php echo $output?></option>
            <?php endforeach?>
         </select>
-        <select class="City">
-
-        </select>
         <script>
-            $(".Province").change(function() {
-                $(".City").show();
+            $(".Provinces").change(function() {
+               $(".City").show();
                $.ajax({
-                url: 'City.php',
-                data: {'provincia': $(".Province").val()},
+                url: './main.php',
+                data: {'provincia': $(".Provinces").val()},
                 type: 'GET',
                 beforeSend: function(){
                     
                 },
                 success: function(data) {
                     console.log(data)
-                        $('.City').append($('<option></option>').text(data));
+                        $('.City').append($('<p> </p>').text(data));
                 },
                     error: function (error){
                     $('body').append('<div>'+ error + '</div>');
