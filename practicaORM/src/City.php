@@ -3,25 +3,34 @@
 * @Entity @Table(name="city")
 **/
 class City {
+    /**
+* @ManyToOne(targetEntity="Province", inversedBy="cities")
+* @JoinColumn(name="province", referencedColumnName="id")
+**/
+   private $province;
+    
     /** @Id @Column(type="integer") @GeneratedValue **/
     public $id;
     
     /** @Column(type="string") **/
     public $name;
     
-     /** @Column(type="integer") **/
-    public $cp;
-
-   public function setName($name) {
+    public function setName($name) {
         $this->name = $name;
-    }
-    
-    public function getCp() {
-        return $this->cp;
-    }
+   }
     
     public function getName() {
         return $this->name;
     }
+    
+    public function getProvince() {
+        return $this->province;
+    }
+
+    public function setProvince($province) {
+        $this->province = $province;
+    }
+
+
 }
 ?>
