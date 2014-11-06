@@ -19,7 +19,7 @@ class Province{
     /** @Column(type="string") **/
     public $name;
     
-    public function getId (){
+    public function getIdProvince (){
         return $this->id;
     }
 

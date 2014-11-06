@@ -26,7 +26,6 @@ foreach ($argv as $nomCiudad) {
     }
 }
 //La funcion reemplaza cada %s que encuentra, con los parametros que le paso
-echo sprintf("El id de la provincia es %s. Y la cantidad de ciudades agregadas es %s\n", 
-             $provincia->getIdProvince(),$cont);
+echo sprintf("El id de la provincia es %s. Y la cantidad de ciudades agregadas es %s\n", $provincia->getIdProvince(),$cont);
 $entityManager->flush();
 ?>
