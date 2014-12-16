@@ -1,0 +1,3 @@
+cine_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: cineBundle:Default:index }

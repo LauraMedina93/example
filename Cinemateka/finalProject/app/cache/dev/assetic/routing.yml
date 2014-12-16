@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: 'C:/xampp/htdocs/example/Cinemateka/finalProject/app/config/routing_dev.yml'
